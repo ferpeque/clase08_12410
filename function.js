@@ -33,9 +33,6 @@ function Fotolibro(_cantidad, _tamaño, _formato, _encuadernacion) {
 */
     
 
-
-
-
 let Fotolibro1= new Fotolibro (32, "10*15", "Horizontal", "tapa Blanda");
 let Fotolibro2= new Fotolibro (48, "15*20", "Vertical", "tapa Dura");
 
@@ -65,16 +62,16 @@ let Fotos = document.getElementById("fotos");
             console.log(Fotos.innerText); // front 
 
     let agregoFotos = document.createElement("option"); 
-                agregoFotos.innerHTML = "esta es mi nueva option";
+                agregoFotos.innerHTML = "84 Fotos";
              
 
 
-let cantFotos = Fotos.getElementsByTagName("option");
-        cantFotos.appendChild(agregoFotos);
+let cantFotos = document.getElementById("cantidadFotos");
+       cantFotos.appendChild(agregoFotos);
     
         console.log(cantFotos);   
             console.log(cantFotos.innerText); // indefinido .. Porqué ?
-                console.log(cantFotos[0].innerText);
+                console.log(cantFotos[0].innerText); 
 
 
 cantFotos[0].innerText = "-- Eliga --   "; // Cambie leyenda de seleccion en Cant de fotos
@@ -123,13 +120,13 @@ for (let index = 0; index < comprasCarrito; index++) {
     miCarrito.push(element);
 }
 
-s
+
 
 console.log(miCarrito);
 
 let milista = document.getElementById(`Micarrito`);
 
-
+aa
 
 for (let index = 0; index < comprasCarrito; index++) {
 
