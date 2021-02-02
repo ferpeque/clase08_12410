@@ -70,8 +70,8 @@ let cantFotos = document.getElementById("cantidadFotos");
        cantFotos.appendChild(agregoFotos);
     
         console.log(cantFotos);   
-            console.log(cantFotos.innerText); // indefinido .. Porqué ?
-                console.log(cantFotos[0].innerText); 
+          console.log(cantFotos.innerText); 
+                console.log(cantFotos[4].innerText); 
 
 
 cantFotos[0].innerText = "-- Eliga --   "; // Cambie leyenda de seleccion en Cant de fotos
