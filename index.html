@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fuera de foco</title>
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <script src="https://kit.fontawesome.com/5afb16c0b5.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="continer-fulid sticky-top estilo__header">
+        <div class="container">
+
+            <!-- Bootstrap-->
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Pricing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                        </ul>
+                        <a class="navbar-brand" href="index.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+s
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <!-- FORMULARIO / COTIZADOR FOTOLIBRO -->
+        <h1 class="text-center">
+            Arma tu Fotolibro
+        </h1>
+
+        <div class="formulario">
+            <form class="text-center">
+                <!-- text-center // provisorio -->
+
+
+                <div id="fotos">
+                    <label>Cantidad de fotos</label>
+                    <select name="cantidad de fotos" id="cantidadFotos">
+                        <option value="">--Seleccione--</option>
+                        <option value="32">32 Fotos</option>
+                        <option value="48">48 Fotos</option>
+                        <option value="64">64 Fotos</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Tamaño de fotos</label>
+                    <select name="Tamaño de fotos" id="tamaño">
+                        <option value="">--Seleccione--</option>
+                        <option value="10*15">10*15</option>
+                        <option value="15*20">15*20</option>
+                        <option value="20*30">20*30</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Formato</label>
+                    <input type="radio" name="Formato" value="Horizontal" class="radio" id="radioHorizontal">
+                    Horizontal
+
+                    <input type="radio" name="Formato" value="Vertical" class="radio" id="radioVertical">
+                    Vertical
+                </div>
+
+                <div>
+                    <label>Encuadernacion</label>
+                    <input type="radio" name="Formato" value="Blanda" class="radio" id="radioBlanda">
+                    Tapa Blanda
+
+                    <input type="radio" name="Formato" value="Dura" class="radio" id="radioDura">
+                    Tapa Dura
+
+                </div>
+
+                <input type="button" onclick="" value="Armar">
+
+            </form>
+        </div>
+
+
+        <!-- PRODUCTOS / AGREGAR CARRITO -->
+
+        <h6 class="text-center">PROCUTOS</h6>
+
+        <div id="productos" class="container justify-content-end">
+            <div class="row ">
+
+                <div class="col-md-4 row  d-flex justify-content-center">
+                    <!-- col-sm-6 -->
+                    <img class="tamaño_img" src="img/1.lomochrome_purple120_box_top_quarter_2_1_5_1.jpg" alt="Rollo1">
+                    <div class="card text-center">
+                        <h3>Lomochrome</h3>
+                        <h2>>Formato: 120 / Sensibilidad (ASA): 100 – 400 / Tipo: Negativo Color /
+                            Revelado: Automático C41</h2>
+                    </div>
+                    <input type="button" value="Agregar">
+                </div>
+
+                <div class="col-md-4 row d-flex justify-content-center">
+                    <!-- col-sm-6 -->
+                    <img class="tamaño_img" src="img/2.portra-160-caja.jpg" alt="Rollo2">
+                    <div class="card text-center">
+                        <h3>Kodak Portra 160 Caja 5u. (120)</h3>
+                        <h2>>Formato: 120 /
+                            Sensibilidad (ASA): 160 /
+                            Tipo: Negativo Color /
+                            Revelado: Automático C41</h2>
+                    </div>
+                    <input type="button" value="Agregar">
+                </div>
+
+                <div class="col-md-4 row d-flex justify-content-center">
+                    <!-- col-sm-6 -->
+                    <img class="tamaño_img" src="img/3.films_120mm_1.jpg" alt="Rollo3">
+                    <div class="card text-center">
+                        <h3>Lomography Lomochrome Metropolis (120))</h3>
+                        <h2>>Formato: 1200 /
+                            Sensibilidad (ASA): 300 /
+                            Tipo: Negativo Color Metropolis /
+                            Revelado: Automático C41</h2>
+                    </div>
+                    <input type="button" value="Agregar">
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="function.js" async defer></script>
+</body>
+
+</html>
